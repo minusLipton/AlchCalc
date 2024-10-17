@@ -34,6 +34,11 @@
             this.lblContents = new System.Windows.Forms.Label();
             this.tbAmount = new System.Windows.Forms.TextBox();
             this.lblAmount = new System.Windows.Forms.Label();
+            this.tbResult1 = new System.Windows.Forms.TextBox();
+            this.tbResult2 = new System.Windows.Forms.TextBox();
+            this.lblResult1 = new System.Windows.Forms.Label();
+            this.lblResult2 = new System.Windows.Forms.Label();
+            this.bt1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSize
@@ -86,11 +91,57 @@
             this.lblAmount.Text = "Zawartość procentowa spirytusu w napoju:";
             this.lblAmount.UseMnemonic = false;
             // 
+            // tbResult1
+            // 
+            this.tbResult1.Location = new System.Drawing.Point(324, 254);
+            this.tbResult1.Name = "tbResult1";
+            this.tbResult1.Size = new System.Drawing.Size(100, 20);
+            this.tbResult1.TabIndex = 6;
+            // 
+            // tbResult2
+            // 
+            this.tbResult2.Location = new System.Drawing.Point(324, 289);
+            this.tbResult2.Name = "tbResult2";
+            this.tbResult2.Size = new System.Drawing.Size(100, 20);
+            this.tbResult2.TabIndex = 7;
+            // 
+            // lblResult1
+            // 
+            this.lblResult1.AutoSize = true;
+            this.lblResult1.Location = new System.Drawing.Point(200, 254);
+            this.lblResult1.Name = "lblResult1";
+            this.lblResult1.Size = new System.Drawing.Size(120, 13);
+            this.lblResult1.TabIndex = 8;
+            this.lblResult1.Text = "Wynik objetości napoju:";
+            // 
+            // lblResult2
+            // 
+            this.lblResult2.AutoSize = true;
+            this.lblResult2.Location = new System.Drawing.Point(147, 292);
+            this.lblResult2.Name = "lblResult2";
+            this.lblResult2.Size = new System.Drawing.Size(174, 13);
+            this.lblResult2.TabIndex = 9;
+            this.lblResult2.Text = "Wynik objetości czystego spirytusu:";
+            // 
+            // bt1
+            // 
+            this.bt1.Location = new System.Drawing.Point(349, 330);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(75, 23);
+            this.bt1.TabIndex = 10;
+            this.bt1.Text = "Oblicz!";
+            this.bt1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.bt1);
+            this.Controls.Add(this.lblResult2);
+            this.Controls.Add(this.lblResult1);
+            this.Controls.Add(this.tbResult2);
+            this.Controls.Add(this.tbResult1);
             this.Controls.Add(this.tbAmount);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.tbContents);
@@ -112,6 +163,11 @@
         private System.Windows.Forms.Label lblContents;
         private System.Windows.Forms.TextBox tbAmount;
         private System.Windows.Forms.Label lblAmount;
+        private System.Windows.Forms.TextBox tbResult1;
+        private System.Windows.Forms.TextBox tbResult2;
+        private System.Windows.Forms.Label lblResult1;
+        private System.Windows.Forms.Label lblResult2;
+        private System.Windows.Forms.Button bt1;
     }
 }
 
