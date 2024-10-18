@@ -17,27 +17,35 @@ namespace AlchCalc
         {
             InitializeComponent();
 
-            //temp
-            Double size = 30;
-            Double contents = 14;
-            int amount = 2;
-            //Double size = Convert.ToDouble(tbSize.Text);
-            //Double contents = Convert.ToDouble(tbContents.Text);
-            //int amount = Convert.ToInt32(tbAmount.Text);
+        }
 
+        private void bt1_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(tbSize.Text) || String.IsNullOrEmpty(tbContents.Text) || String.IsNullOrEmpty(tbAmount.Text))
+            {
+                MessageBox.Show("enter data");
+            }
+            else
+            {
+                try
+                {
 
-            double totalVolume = size * amount;
-            double volumeOfAlcohol = totalVolume * (contents / 100);
-            double volumeOfRest = totalVolume - volumeOfAlcohol;
+                    Double size = Convert.ToDouble(tbSize.Text);
+                    Double contents = Convert.ToDouble(tbContents.Text);
+                    int amount = Convert.ToInt32(tbAmount.Text);
 
-            
-            //Console.WriteLine($"Volume of alcohol: {volumeOfAlcohol} ml");
-            //Console.WriteLine($"Volume of the rest of the drink: {volumeOfRest} ml");
+                    double totalVolume = size * amount;
+                    double volumeOfAlcohol = totalVolume * (contents / 100);
+                    double volumeOfRest = totalVolume - volumeOfAlcohol;
 
-            tbSize.Text = volumeOfAlcohol.ToString();
-            tbContents.Text = volumeOfRest.ToString();
-            
-
+                    tbResult1.Text = (Convert.ToString(volumeOfRest)+" ml");
+                    tbResult2.Text = (Convert.ToString(volumeOfAlcohol) + " ml");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("enter numbers only");
+                }
+            }
         }
     }
 }

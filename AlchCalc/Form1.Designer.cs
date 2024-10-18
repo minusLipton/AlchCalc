@@ -131,6 +131,7 @@
             this.bt1.TabIndex = 10;
             this.bt1.Text = "Oblicz!";
             this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
             // Form1
             // 
