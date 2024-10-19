@@ -140,14 +140,12 @@
             this.cb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb1.FormattingEnabled = true;
             this.cb1.Items.AddRange(new object[] {
+            "(none)",
             "Piwo",
-            "Wino",
+            "Wino czerwone",
+            "Wino białe",
             "Wódka",
-            "Szampan",
-            "Likier",
-            "Whiskey",
-            "Rum",
-            "Bimber"});
+            "Likier smakowy"});
             this.cb1.Location = new System.Drawing.Point(442, 110);
             this.cb1.Name = "cb1";
             this.cb1.Size = new System.Drawing.Size(90, 21);
@@ -158,17 +156,15 @@
             this.cb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb2.FormattingEnabled = true;
             this.cb2.Items.AddRange(new object[] {
+            "(none)",
             "kieliszek 20 ml",
             "kieliszek 50 ml",
-            "kieliszek 100 ml",
-            "kieliszek liqueur 60 ml",
+            "szklanaka 100ml",
+            "szklanka piwo 380ml",
             "kieliszek biale wino 250 ml",
             "kieliszek biale wino 360 ml",
             "kieliszek czerwone wino 450 ml",
-            "kieliszek czerwone wino 580 ml",
-            "kieliszek czerwone wino 600 ml",
-            "kieliszek flute 200 ml",
-            "kieliszek piwo 380ml"});
+            "kieliszek czerwone wino 580 ml"});
             this.cb2.Location = new System.Drawing.Point(547, 110);
             this.cb2.Name = "cb2";
             this.cb2.Size = new System.Drawing.Size(184, 21);
