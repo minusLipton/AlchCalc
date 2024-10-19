@@ -10,6 +10,12 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AlchCalc
+
+    /*
+     * Zrobiłem coś musisz mi napisać jak masz zastrzeżenia do comboboxów, nie wiedzialem co mam wpiszać
+     * wpadłem na pomysł, ale pewnie wiecej roboty bedzie, że jak wybierze sie białe wino to masz tylko kieliszki do bialego wina
+     * ale nie wiem czy to nie za ambitne :) 19.10.2024 13:30
+     * */
 {
     public partial class Form1 : Form
     {

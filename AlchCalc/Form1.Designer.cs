@@ -39,6 +39,8 @@
             this.lblResult1 = new System.Windows.Forms.Label();
             this.lblResult2 = new System.Windows.Forms.Label();
             this.bt1 = new System.Windows.Forms.Button();
+            this.cb1 = new System.Windows.Forms.ComboBox();
+            this.cb2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblSize
@@ -84,11 +86,11 @@
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Location = new System.Drawing.Point(112, 189);
+            this.lblAmount.Location = new System.Drawing.Point(216, 189);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(209, 13);
+            this.lblAmount.Size = new System.Drawing.Size(105, 13);
             this.lblAmount.TabIndex = 4;
-            this.lblAmount.Text = "Zawartość procentowa spirytusu w napoju:";
+            this.lblAmount.Text = "Ilość sztuk naczynia:";
             this.lblAmount.UseMnemonic = false;
             // 
             // tbResult1
@@ -133,11 +135,52 @@
             this.bt1.UseVisualStyleBackColor = true;
             this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
+            // cb1
+            // 
+            this.cb1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb1.FormattingEnabled = true;
+            this.cb1.Items.AddRange(new object[] {
+            "Piwo",
+            "Wino",
+            "Wódka",
+            "Szampan",
+            "Likier",
+            "Whiskey",
+            "Rum",
+            "Bimber"});
+            this.cb1.Location = new System.Drawing.Point(442, 110);
+            this.cb1.Name = "cb1";
+            this.cb1.Size = new System.Drawing.Size(90, 21);
+            this.cb1.TabIndex = 11;
+            // 
+            // cb2
+            // 
+            this.cb2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb2.FormattingEnabled = true;
+            this.cb2.Items.AddRange(new object[] {
+            "kieliszek 20 ml",
+            "kieliszek 50 ml",
+            "kieliszek 100 ml",
+            "kieliszek liqueur 60 ml",
+            "kieliszek biale wino 250 ml",
+            "kieliszek biale wino 360 ml",
+            "kieliszek czerwone wino 450 ml",
+            "kieliszek czerwone wino 580 ml",
+            "kieliszek czerwone wino 600 ml",
+            "kieliszek flute 200 ml",
+            "kieliszek piwo 380ml"});
+            this.cb2.Location = new System.Drawing.Point(547, 110);
+            this.cb2.Name = "cb2";
+            this.cb2.Size = new System.Drawing.Size(184, 21);
+            this.cb2.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cb2);
+            this.Controls.Add(this.cb1);
             this.Controls.Add(this.bt1);
             this.Controls.Add(this.lblResult2);
             this.Controls.Add(this.lblResult1);
@@ -169,6 +212,8 @@
         private System.Windows.Forms.Label lblResult1;
         private System.Windows.Forms.Label lblResult2;
         private System.Windows.Forms.Button bt1;
+        private System.Windows.Forms.ComboBox cb1;
+        private System.Windows.Forms.ComboBox cb2;
     }
 }
 
